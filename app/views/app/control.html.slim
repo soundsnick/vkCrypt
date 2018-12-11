@@ -1,0 +1,7 @@
+= form_with class: 'control-form', url: '/encrypt'
+  h1.control-form = "Зашифровать"
+  .control-form__responser
+    - if notice
+      span = notice
+  textarea.control-form__field type="text" name="msg" placeholder="msg"
+  input.control-form__submit type="submit" value="Зашифровать"
